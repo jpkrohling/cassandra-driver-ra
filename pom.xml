@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <name>Hawkular - Cassandra RA - Parent</name>
+  <groupId>org.hawkular.cassandra</groupId>
+  <artifactId>cassandra-resource-adapter-parent</artifactId>
+  <version>0.0.2.Final-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <url>http://repository.jboss.org</url>
+
+  <properties>
+    <version.org.jboss.ironjacamar>1.2.6.Final</version.org.jboss.ironjacamar>
+    <version.com.datastax.cassandra>2.2.0-rc3</version.com.datastax.cassandra>
+    <version.junit>4.11</version.junit>
+    <version.org.cassandra>2.2.2</version.org.cassandra>
+    <version.org.wildfly>10.0.0.CR4</version.org.wildfly>
+    <version.org.wildfly.build>1.1.1.Final</version.org.wildfly.build>
+  </properties>
+
+  <modules>
+    <module>resource-adapter</module>
+    <module>feature-pack</module>
+    <module>dist</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.datastax.cassandra</groupId>
+        <artifactId>cassandra-driver-core</artifactId>
+        <version>${version.com.datastax.cassandra}</version>
+      </dependency>
+
+      <!-- IronJacamar dependencies -->
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-depchain</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-spec-api</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-arquillian-embedded</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-arquillian-embedded-byteman</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-common-api</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-common-spi</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-common-impl</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-core-api</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-core-impl</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-depchain</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-deployers-common</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-deployers-fungal</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-embedded</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-test-eis</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ironjacamar</groupId>
+        <artifactId>ironjacamar-validator</artifactId>
+        <version>${version.org.jboss.ironjacamar}</version>
+      </dependency>
+
+      <!-- Testing dependencies -->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${version.junit}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.cassandra</groupId>
+        <artifactId>cassandra-all</artifactId>
+        <version>${version.org.cassandra}</version>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
+</project>
