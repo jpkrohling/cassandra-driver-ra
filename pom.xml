@@ -10,16 +10,85 @@
   <version>0.0.2.Final-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <url>http://repository.jboss.org</url>
+  <developers>
+    <developer>
+      <id>jpkroehling</id>
+      <name>Juraci Paixão Kröhling</name>
+      <timezone>+01:00</timezone>
+    </developer>
+  </developers>
+
+  <url>http://www.hawkular.org/</url>
+
+  <scm>
+    <url>https://github.com/jpkrohling/cassandra-driver-ra</url>
+    <connection>scm:git:https://github.com/jpkrohling/cassandra-driver-ra</connection>
+    <developerConnection>scm:git:git@github.com:jpkrohling/cassandra-driver-ra.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <url>https://issues.jboss.org/browse/HAWKULAR</url>
+    <system>JIRA</system>
+  </issueManagement>
+
+  <ciManagement>
+    <system>Jenkins CI</system>
+    <url>https://jenkins.kroehling.de/job/cassandra-driver-ra/</url>
+  </ciManagement>
+
+  <mailingLists>
+    <mailingList>
+      <name>Hawkular Developer List</name>
+      <subscribe>https://lists.jboss.org/mailman/listinfo/hawkular-dev</subscribe>
+      <unsubscribe>https://lists.jboss.org/mailman/listinfo/hawkular-dev</unsubscribe>
+      <archive>http://lists.jboss.org/pipermail/hawkular-dev</archive>
+    </mailingList>
+  </mailingLists>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <distributionManagement>
+    <repository>
+      <id>jboss-releases-repository</id>
+      <name>JBoss Releases Repository</name>
+      <url>${jboss.releases.repo.url}</url>
+    </repository>
+    <snapshotRepository>
+      <id>jboss-snapshots-repository</id>
+      <name>JBoss Snapshots Repository</name>
+      <url>${jboss.snapshots.repo.url}</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
     <autoVersionSubmodules>true</autoVersionSubmodules>
+
     <version.org.jboss.ironjacamar>1.2.6.Final</version.org.jboss.ironjacamar>
     <version.com.datastax.cassandra>2.2.0-rc3</version.com.datastax.cassandra>
     <version.junit>4.11</version.junit>
     <version.org.cassandra>2.2.2</version.org.cassandra>
     <version.org.wildfly>10.0.0.CR4</version.org.wildfly>
     <version.org.wildfly.build>1.1.1.Final</version.org.wildfly.build>
+
+    <jboss.releases.repo.url>
+      https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/
+    </jboss.releases.repo.url>
+    <jboss.snapshots.repo.url>
+      https://repository.jboss.org/nexus/content/repositories/snapshots/
+    </jboss.snapshots.repo.url>
   </properties>
 
   <modules>
