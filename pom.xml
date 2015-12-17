@@ -6,7 +6,7 @@
   <name>Cassandra RA - Parent</name>
   <groupId>org.jboss.cassandra</groupId>
   <artifactId>cassandra-resource-adapter-parent</artifactId>
-  <version>0.0.3.Final-SNAPSHOT</version>
+  <version>0.0.3.Final</version>
   <packaging>pom</packaging>
 
   <description>
@@ -27,7 +27,7 @@
     <url>https://github.com/jpkrohling/cassandra-driver-ra</url>
     <connection>scm:git:https://github.com/jpkrohling/cassandra-driver-ra</connection>
     <developerConnection>scm:git:git@github.com:jpkrohling/cassandra-driver-ra.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>0.0.3.Final</tag>
   </scm>
 
   <issueManagement>
