@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.hawkular.cassandra;
+package org.jboss.cassandra.ra;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
@@ -49,14 +49,14 @@ public class ConnectorTestCase {
     }
 
     /** Resource */
-    @Resource(mappedName = "java:/eis/CassandraDriverConnectionFactory")
+    @Resource(mappedName = "java:/CassandraDriverConnectionFactory")
     private CassandraDriverConnectionFactory connectionFactory;
 
     public static ResourceAdapterArchive getBaseArchive() {
         ResourceAdapterArchive raa =
                 ShrinkWrap.create(ResourceAdapterArchive.class, "ConnectorTestCase.rar");
         JavaArchive ja = ShrinkWrap.create(JavaArchive.class, UUID.randomUUID().toString() + ".jar");
-        ja.addPackages(true, Package.getPackage("org.hawkular.cassandra"));
+        ja.addPackages(true, Package.getPackage("org.jboss.cassandra.ra"));
         raa.addAsLibrary(ja);
         return raa;
     }

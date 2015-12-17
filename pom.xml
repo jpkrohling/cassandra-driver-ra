@@ -4,8 +4,8 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <name>Hawkular - Cassandra RA - Parent</name>
-  <groupId>org.hawkular.cassandra</groupId>
+  <name>Cassandra RA - Parent</name>
+  <groupId>org.jboss.cassandra</groupId>
   <artifactId>cassandra-resource-adapter-parent</artifactId>
   <version>0.0.2.Final-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -13,6 +13,7 @@
   <url>http://repository.jboss.org</url>
 
   <properties>
+    <autoVersionSubmodules>true</autoVersionSubmodules>
     <version.org.jboss.ironjacamar>1.2.6.Final</version.org.jboss.ironjacamar>
     <version.com.datastax.cassandra>2.2.0-rc3</version.com.datastax.cassandra>
     <version.junit>4.11</version.junit>

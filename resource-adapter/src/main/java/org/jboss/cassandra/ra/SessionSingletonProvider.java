@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.hawkular.cassandra;
+package org.jboss.cassandra.ra;
 
 import java.util.concurrent.atomic.AtomicReference;
 

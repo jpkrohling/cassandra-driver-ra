@@ -27,8 +27,8 @@
              http://www.ironjacamar.org/doc/schema/ironjacamar_1_1.xsd">
   <transaction-support>NoTransaction</transaction-support>
   <connection-definitions>
-    <connection-definition class-name="org.hawkular.cassandra.CassandraDriverManagedConnectionFactory"
-                           jndi-name="java:/eis/CassandraDriverConnectionFactory"
+    <connection-definition class-name="org.jboss.cassandra.ra.CassandraDriverManagedConnectionFactory"
+                           jndi-name="java:/CassandraDriverConnectionFactory"
                            pool-name="CassandraDriverConnectionFactory">
       <config-property name="nodes">127.0.0.1</config-property>
       <config-property name="port">9042</config-property>

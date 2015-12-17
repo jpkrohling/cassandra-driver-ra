@@ -19,14 +19,14 @@
  * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
-package org.hawkular.cassandra.mbean;
+package org.jboss.cassandra.ra.mbean;
 
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
 import javax.naming.InitialContext;
 
-import org.hawkular.cassandra.CassandraDriverConnection;
-import org.hawkular.cassandra.CassandraDriverConnectionFactory;
+import org.jboss.cassandra.ra.CassandraDriverConnection;
+import org.jboss.cassandra.ra.CassandraDriverConnectionFactory;
 
 /**
  * CassandraDriverMBeanImpl

@@ -24,8 +24,8 @@
 
 <deployment>
   <bean name="CassandraDriver"
-        interface="org.hawkular.cassandra.mbean.CassandraDriverMBean"
-        class="org.hawkular.cassandra.mbean.CassandraDriverMBeanImpl">
+        interface="org.jboss.cassandra.ra.mbean.CassandraDriverMBean"
+        class="org.jboss.cassandra.ra.mbean.CassandraDriverMBeanImpl">
     <property name="MBeanServer">
       <inject bean="Kernel" property="MBeanServer"/>
     </property>

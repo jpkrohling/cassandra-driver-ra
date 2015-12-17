@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.hawkular.cassandra</groupId>
+    <groupId>org.jboss.cassandra</groupId>
     <artifactId>cassandra-resource-adapter-parent</artifactId>
     <version>0.0.2.Final-SNAPSHOT</version>
   </parent>
 
-  <name>Hawkular - Cassandra RA - Resource Adapter</name>
+  <name>Cassandra RA - Resource Adapter</name>
   <artifactId>cassandra-resource-adapter</artifactId>
   <packaging>jar</packaging>
 
