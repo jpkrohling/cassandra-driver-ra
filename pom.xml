@@ -9,6 +9,10 @@
   <version>0.0.3.Final-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <description>
+    Cassandra Resource Adapter parent.
+  </description>
+
   <developers>
     <developer>
       <id>jpkroehling</id>
