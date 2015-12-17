@@ -23,8 +23,6 @@
 
   <modules>
     <module>resource-adapter</module>
-    <module>feature-pack</module>
-    <module>dist</module>
   </modules>
 
   <dependencyManagement>
